@@ -1,8 +1,8 @@
 class HelloWorld(object):
 
-    def __init__(self):
+    def __init__(self, message='hello world!'):
 
-        self.message = 'hello world!'
+        self.message = message
     
     def say(self, extra_message=None):
         
