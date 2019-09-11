@@ -4,7 +4,7 @@ This demo will walk you through the basics of using `git` and the GitHub platfor
 
 ## Cloning the repository
 
-First we will clone the newly created repository. If you navigate to the GitHub repository page, [`https://github.com/dlej/d2k-demo`](https://github.com/dlej/d2k-demo), you will find a button to clone:
+First we will clone the newly created repository. If you navigate to the GitHub repository page, [`https://github.com/dlej/d2k-git-demo`](https://github.com/dlej/d2k-git-demo), you will find a button to clone:
 
 ![](images/clone_ssh.png)
 
@@ -12,8 +12,8 @@ Then in a terminal, we can clone the repository using this address `git clone`, 
 
 
 ```
-$ git clone git@github.com:dlej/d2k-demo.git
-Cloning into 'd2k-demo'...
+$ git clone git@github.com:dlej/d2k-git-demo.git
+Cloning into 'd2k-git-demo'...
 Warning: Permanently added the RSA host key for IP address '140.82.113.4' to the list of known hosts.
 remote: Enumerating objects: 4, done.
 remote: Counting objects: 100% (4/4), done.
@@ -23,9 +23,9 @@ Receiving objects: 100% (4/4), done.
 Checking connectivity... done.
 
 $ ls
-d2k-demo/
+d2k-git-demo/
 
-$ cd d2k-demo/
+$ cd d2k-git-demo/
 
 $ ls
 LICENSE  README.md
@@ -33,7 +33,7 @@ LICENSE  README.md
 
 ## Pushing code to GitHub
 
-Let's suppose we create two new files called `mylibrary.py` (view [here](https://github.com/dlej/d2k-demo/blob/eeeb7f94c15227406f5572a8f9070890f2cc5d7e/mylibrary.py)) and `experiment1.py` (view [here](https://github.com/dlej/d2k-demo/blob/eeeb7f94c15227406f5572a8f9070890f2cc5d7e/experiment1.py)) that allow us to run an experiment. Our experiment gives the following output:
+Let's suppose we create two new files called `mylibrary.py` (view [here](https://github.com/dlej/d2k-git-demo/blob/eeeb7f94c15227406f5572a8f9070890f2cc5d7e/mylibrary.py)) and `experiment1.py` (view [here](https://github.com/dlej/d2k-git-demo/blob/eeeb7f94c15227406f5572a8f9070890f2cc5d7e/experiment1.py)) that allow us to run an experiment. Our experiment gives the following output:
 
 ```
 $ python experiment1.py
@@ -81,7 +81,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (4/4), done.
 Writing objects: 100% (4/4), 583 bytes | 0 bytes/s, done.
 Total 4 (delta 0), reused 0 (delta 0)
-To git@github.com:dlej/d2k-demo.git
+To git@github.com:dlej/d2k-git-demo.git
    1c715c4..eeeb7f9  master -> master
 ```
 
@@ -107,9 +107,9 @@ $ git push origin experiment2
 Total 0 (delta 0), reused 0 (delta 0)
 remote:
 remote: Create a pull request for 'experiment2' on GitHub by visiting:
-remote:      https://github.com/dlej/d2k-demo/pull/new/experiment2
+remote:      https://github.com/dlej/d2k-git-demo/pull/new/experiment2
 remote:
-To git@github.com:dlej/d2k-demo.git
+To git@github.com:dlej/d2k-git-demo.git
  * [new branch]      experiment2 -> experiment2
 ```
 
@@ -123,9 +123,9 @@ $ git push origin tidying
 Total 0 (delta 0), reused 0 (delta 0)
 remote:
 remote: Create a pull request for 'tidying' on GitHub by visiting:
-remote:      https://github.com/dlej/d2k-demo/pull/new/tidying
+remote:      https://github.com/dlej/d2k-git-demo/pull/new/tidying
 remote:
-To git@github.com:dlej/d2k-demo.git
+To git@github.com:dlej/d2k-git-demo.git
  * [new branch]      tidying -> tidying
 ```
 
@@ -133,7 +133,7 @@ To git@github.com:dlej/d2k-demo.git
 
 #### Command-line
 
-Suppose that Bob finishes his changes first. He has made some tweaks to `mylibrary.py` and added `.gitignore` (view [here](https://github.com/dlej/d2k-demo/blob/3f9037e3097624a7ab1649d20e8a2e9fd681459e/.gitignore)) so that the `__pycache__` directory is ignored by `git`. He can view his changes to existing files such as `mylibrary.py` using `git diff`:
+Suppose that Bob finishes his changes first. He has made some tweaks to `mylibrary.py` and added `.gitignore` (view [here](https://github.com/dlej/d2k-git-demo/blob/3f9037e3097624a7ab1649d20e8a2e9fd681459e/.gitignore)) so that the `__pycache__` directory is ignored by `git`. He can view his changes to existing files such as `mylibrary.py` using `git diff`:
 
 ```
 $ git diff
@@ -185,7 +185,7 @@ Compressing objects: 100% (3/3), done.
 Writing objects: 100% (4/4), 398 bytes | 0 bytes/s, done.
 Total 4 (delta 2), reused 0 (delta 0)
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-To git@github.com:dlej/d2k-demo.git
+To git@github.com:dlej/d2k-git-demo.git
    eeeb7f9..3f9037e  tidying -> tidying
 Branch tidying set up to track remote branch tidying from origin.
 ```
@@ -210,13 +210,13 @@ Fast-forward
 
 $ git push
 Total 0 (delta 0), reused 0 (delta 0)
-To git@github.com:dlej/d2k-demo.git
+To git@github.com:dlej/d2k-git-demo.git
    eeeb7f9..3f9037e  master -> master
 ```
 
 #### Pull requests
 
-Alice has finally finished her work, which consists of some tweaks to `mylibrary.py` and a new `experiment2.py` (view [here](https://github.com/dlej/d2k-demo/blob/f924cef164cb02a9a9e3942a293aadcba6e3945c/experiment2.py)). The new experiment generates some Fibonacci numbers:
+Alice has finally finished her work, which consists of some tweaks to `mylibrary.py` and a new `experiment2.py` (view [here](https://github.com/dlej/d2k-git-demo/blob/f924cef164cb02a9a9e3942a293aadcba6e3945c/experiment2.py)). The new experiment generates some Fibonacci numbers:
 
 ```
 $ python experiment2.py
@@ -254,7 +254,7 @@ Compressing objects: 100% (4/4), done.
 Writing objects: 100% (4/4), 539 bytes | 0 bytes/s, done.
 Total 4 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To git@github.com:dlej/d2k-demo.git
+To git@github.com:dlej/d2k-git-demo.git
    eeeb7f9..f924cef  experiment2 -> experiment2
 Branch experiment2 set up to track remote branch experiment2 from origin.
 ```
@@ -301,7 +301,7 @@ Fast-forward
 Alice now wants to go back and run `experiment1.py` again, so she tries to run it. 
 
 ```
-danie@BANGNOLUFSEN MINGW64 /c/src/rice/d2k/d2k-demo (master)
+danie@BANGNOLUFSEN MINGW64 /c/src/rice/d2k/d2k-git-demo (master)
 $ python experiment1.py
 Traceback (most recent call last):
   File "experiment1.py", line 5, in <module>
@@ -327,7 +327,7 @@ do so (now or later) by using -b with the checkout command again. Example:
 
 HEAD is now at eeeb7f9... hello world experiment
 
-danie@BANGNOLUFSEN MINGW64 /c/src/rice/d2k/d2k-demo ((eeeb7f9...))
+danie@BANGNOLUFSEN MINGW64 /c/src/rice/d2k/d2k-git-demo ((eeeb7f9...))
 $ python experiment1.py
 hello world! how are you?
 ```
