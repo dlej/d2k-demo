@@ -301,7 +301,6 @@ Fast-forward
 Alice now wants to go back and run `experiment1.py` again, so she tries to run it. 
 
 ```
-danie@BANGNOLUFSEN MINGW64 /c/src/rice/d2k/d2k-git-demo (master)
 $ python experiment1.py
 Traceback (most recent call last):
   File "experiment1.py", line 5, in <module>
@@ -327,7 +326,6 @@ do so (now or later) by using -b with the checkout command again. Example:
 
 HEAD is now at eeeb7f9... hello world experiment
 
-danie@BANGNOLUFSEN MINGW64 /c/src/rice/d2k/d2k-git-demo ((eeeb7f9...))
 $ python experiment1.py
 hello world! how are you?
 ```
